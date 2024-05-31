@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Background Color Changer</title>
+    <script>
+        function changeBackgroundColor() {
+            var colors = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#00FFFF", "#FF00FF"];
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+
+        // Call changeBackgroundColor() every minute (60000 milliseconds)
+        setInterval(changeBackgroundColor, 60000);
+    </script>
+</head>
+<body>
+    <h1>This page will change its background color every minute.</h1>
+</body>
+</html>
